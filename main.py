@@ -7,7 +7,7 @@ app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 # Configuration for SQLite database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'your_database_name.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'userdata.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # Disable a warning
 
 db = SQLAlchemy(app)
